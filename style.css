@@ -16,13 +16,19 @@ html, body{
 #main{
     width: 100%;
     height: 100vh;
-    background-color: black;
 }
 #back{
     width: 100%;
     height: 100vh;
     /* background-color: red; */
 }
+
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 #top{
     position: absolute; 
     /* absolute becuz we want it at the top of back */
@@ -30,7 +36,9 @@ html, body{
     left: 0;
     width: 100%;
     height: 100vh;
-    /* background-color: #9999996e;  */
+    pointer-events: none;
+    /* so that we cannot point on the top div cuz we need to change image but at the same timme we want to click on navs and buttons so gonna make it pointer event all */
+    /* background-color: black; */
 }
 
 #workingarea
@@ -68,6 +76,7 @@ html, body{
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
+    pointer-events: all;
 }
 
 #hero{
@@ -106,6 +115,7 @@ html, body{
     font-size: 3vw;
     margin-top: 2vw;
     font-family: "kajiro";
+    pointer-events: all;
 }
 
 #heroright{
