@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body{
@@ -38,15 +39,15 @@ html, body{
     height: 100vh;
     max-width: 1920px;  
     /* if the screen is 1920px it will take the full width but if the screen is bigger than 1920px max width will be always 1920px*/
-    border: 1px solid red;
     margin: 0 auto;
+    position: relative;
 }
 
 #nav{
     width: 100%;
-    padding: 20px 0px;
+    padding: 20px 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #nav img{
@@ -62,7 +63,6 @@ html, body{
 #nav  a{
     color: white;
     /* font-family: "gilroy"; */
-    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
@@ -70,3 +70,69 @@ html, body{
     letter-spacing: 1px;
 }
 
+#hero{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -45%);
+    padding: 0 40px;
+}
+
+#heroleft{
+    min-width:50%;
+}
+
+
+#heroleft .elem{
+    height: 9vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+#heroleft .elem h1{
+    line-height: .9;
+    font-family: "kajiro";
+    color: white;
+    font-weight: 100;
+    font-size: 11vw;
+    letter-spacing: 3px;
+}
+
+#heroleft button{
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family: "kajiro";
+}
+
+#heroright{
+    width: 17%;
+    /* background-color: green; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#heroright{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#heroright #imagediv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://images.unsplash.com/photo-1517925662132-78f2f6e1f908?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#heroright p:nth-child(3){
+    margin-bottom: 100px;
+}
