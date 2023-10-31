@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width:100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#back{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+#top{
+    position: absolute; 
+    /* absolute becuz we want it at the top of back */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #9999996e;  */
+}
+
+#workingarea
+{
+    width: 100%;
+    height: 100vh;
+    max-width: 1920px;  
+    /* if the screen is 1920px it will take the full width but if the screen is bigger than 1920px max width will be always 1920px*/
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+#nav{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav img{
+    height: 60px;
+}
+
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#nav  a{
+    color: white;
+    /* font-family: "gilroy"; */
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
