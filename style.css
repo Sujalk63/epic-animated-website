@@ -39,6 +39,8 @@ html, body{
     pointer-events: none;
     /* so that we cannot point on the top div cuz we need to change image but at the same timme we want to click on navs and buttons so gonna make it pointer event all */
     /* background-color: black; */
+    /* background-color: black; */
+
 }
 
 #workingarea
